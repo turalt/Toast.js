@@ -1,14 +1,27 @@
 # Toast.js
 
-A JavaScript prototype for Toast messages
+A JavaScript prototype for Toast messages, forked from: https://ireade.github.io/Toast.js.
 
-![Demo](https://bitsofco.de/content/images/2016/08/Aug-23-2016-08-31-11.gif)
+This module's external API is very different to its original. In particular, it
+exposes a commonjs module interface, rather than using a global, for easier 
+integration. This may change over time, but is intended for easier use in 
+ES6 projects.
 
-## Docs
+Accordingly, the version has been bumped to 2.*, because the new API deserves a new
+major version.
 
-- [Getting Started](https://ireade.github.io/Toast.js/#getting-started)
-- [Options](https://ireade.github.io/Toast.js/#options)
-- [Examples](https://ireade.github.io/Toast.js/#examples)
-	- [Simple](https://ireade.github.io/Toast.js/#example-1)
-	- [Change Toast Style](https://ireade.github.io/Toast.js/#example-2)
-	- [Custom Button Functions](https://ireade.github.io/Toast.js/#example-3)
+## Basic usage
+
+Installing:
+
+```sh
+$ npm install https://github.com/turalt/toast.js
+```
+
+Use in your code:
+
+```javascript
+const Toast = require('toast.js');
+...
+new Toast({message: "Hello", type: 'danger'});
+```
