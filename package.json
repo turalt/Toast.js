@@ -1,12 +1,16 @@
 {
   "name": "toast.js",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A simple javascript prototype for creating toast messages",
   "main": "lib/Toast.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Stuart Watt <stuart.watt@turalt.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/turalt/toast.js.git"
+  },
   "devDependencies": {}
 }
